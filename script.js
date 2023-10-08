@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let resultMessage = '';
         if (result > 0) {
-            resultMessage = `추가로 약 ${result.toFixed(2)}개의 상품을 더 얻을 확률이 있습니다.`;
+            resultMessage = `${result.toFixed(2)}개의 상품을 덜 뽑으셨습니다.`;
         } else if (result < 0) {
-            resultMessage = `추가로 약 ${Math.abs(result).toFixed(2)}개의 상품이 필요합니다.`;
+            resultMessage = `${Math.abs(result).toFixed(2)}개의 상품을 더 뽑으셨습니다.`;
         } else {
-            resultMessage = `유효한 상품을 이미 보유하고 있습니다.`;
+            resultMessage = `평균회귀하셨습니다.`;
         }
 
         document.getElementById('result').textContent = resultMessage;
