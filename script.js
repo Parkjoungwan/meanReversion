@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const currentItems = parseInt(document.getElementById('current-items').value);
 
         const expectedItems = tries * probability;
-        const result = Math.floor(expectedItems) - currentItems;
+        const roundedExpectedItems = Math.round(expectedItems); // 반올림
+
+        const result = roundedExpectedItems - currentItems;
 
         let resultMessage = '';
         if (result > 0) {
