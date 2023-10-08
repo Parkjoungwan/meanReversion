@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const currentItems = parseInt(document.getElementById('current-items').value);
 
         const expectedItems = tries * probability;
-        const result = expectedItems - currentItems;
+        const result = Math.floor(expectedItems) - currentItems;
 
         let resultMessage = '';
         if (result > 0) {
