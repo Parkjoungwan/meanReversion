@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let resultMessage = '';
         if (result > 0) {
-            resultMessage = `${result.toFixed(2)}개의 상품을 덜 뽑으셨습니다.`;
+            resultMessage = `${result}개의 상품을 덜 뽑으셨습니다.`;
         } else if (result < 0) {
-            resultMessage = `${Math.abs(result).toFixed(2)}개의 상품을 더 뽑으셨습니다.`;
+            resultMessage = `${Math.abs(result)}개의 상품을 더 뽑으셨습니다.`;
         } else {
             resultMessage = `평균회귀하셨습니다.`;
         }
